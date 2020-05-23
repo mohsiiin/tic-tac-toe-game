@@ -62,7 +62,7 @@ def player_choice(board):
     
     position = 0
     while position not in [1,2,3,4,5,6,7,8,9] or not space_check(board,position):
-        position = int(input('Choose a position : (1,9)'))
+        position = int(input('\n Choose a position : (1,9)'))
     return position
 
 def replay():
@@ -82,7 +82,7 @@ while True:
     turn = choose_first()
     print(turn + ' will go first.')
     
-    play_game = input('Are you ready to play? Enter Yes or No. : ')
+    play_game = input('\n Are you ready to play? Enter Yes or No. : ')
     
     if play_game.lower()[0] == 'y':
         game_on = True
